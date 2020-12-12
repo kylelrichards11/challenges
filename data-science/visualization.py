@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 
 def plot_timestamp_feature(x, y, title="", xlabel="", ylabel="", c=None):
-    """ Plots a single feature against the timestamp """
+    """ Plots a single feature against the timestamp (given as x) """
     fig = plt.figure(num=None, figsize=(16, 10))
     ax1 = fig.add_subplot(111)
     ax1.set_title(title)
@@ -11,7 +11,7 @@ def plot_timestamp_feature(x, y, title="", xlabel="", ylabel="", c=None):
     plt.show()
 
 def plot_scatter_2d(x, y, title="", xlabel="", ylabel="", c=None):
-    """ Makes a 3D scatter plot for given x, y, and z """
+    """ Makes a 2D scatter plot for given x and y inputs """
     fig = plt.figure(num=None, figsize=(16, 10))
     ax1 = fig.add_subplot(111)
     ax1.scatter(x, y, c=c)
