@@ -12,7 +12,7 @@ def plot_timestamp_feature(x, y, title="", xlabel="", ylabel="", c=None):
 
 def plot_scatter_2d(x, y, title="", xlabel="", ylabel="", c=None):
     """ Makes a 3D scatter plot for given x, y, and z """
-    fig = plt.figure(num=None, figsize=(32, 10))
+    fig = plt.figure(num=None, figsize=(16, 10))
     ax1 = fig.add_subplot(111)
     ax1.scatter(x, y, c=c)
     ax1.set_title(title)
@@ -33,7 +33,7 @@ def plot_results(data, machine_num):
             groupings.append((prev_i, i))
             prev_i = i
     for i in range(4):
-        fig = plt.figure(num=None, figsize=(32, 10))
+        fig = plt.figure(num=None, figsize=(16, 10))
         ax1 = fig.add_subplot(111)
         ax1.set_xlabel("Timestamp")
         ax1.set_ylabel(f"Feature {i} Value")
